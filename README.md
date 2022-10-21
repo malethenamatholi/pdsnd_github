@@ -42,4 +42,10 @@ The Chicago and New York City files also have the following two columns:
 The original files are much larger and messier, but they can be accessed here if you'd like to see them (Chicago, New York City, Washington). These files had more columns and they differed in format in many cases. Some data wrangling has been performed to condense these files to the above core six columns to make your analysis and the evaluation of your Python skills more straightforward.
 
 ### Credits
-It's important to give proper credit. Add links to any repo that inspired you or blogposts you consulted.
+WEBSITES USED ARE:
+UDACITY classroom and suggested websites for more detailed information
+https://www.geeksforgeeks.org/python-pandas-series-dt-hour/#:~:text=dt%20can%20be%20used%20to,of%20the%20given%20series%20object.
+https://www.statology.org/idxmax-pandas/
+https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.nlargest.html
+https://stackoverflow.com/questions/63229237/finding-the-most-frequent-combination-in-dataframe
+I used mostly stackoverflow and geeksforgeeks 
