@@ -41,6 +41,28 @@ The Chicago and New York City files also have the following two columns:
 
 The original files are much larger and messier, but they can be accessed here if you'd like to see them (Chicago, New York City, Washington). These files had more columns and they differed in format in many cases. Some data wrangling has been performed to condense these files to the above core six columns to make your analysis and the evaluation of your Python skills more straightforward.
 
+### Statistics Computed
+You will learn about bike share use in Chicago, New York City, and Washington by computing a variety of descriptive statistics. In this project, you'll write code to provide the following information:
+
+####1 Popular times of travel (i.e., occurs most often in the start time)
+most common month
+most common day of week
+most common hour of day
+
+####2 Popular stations and trip
+most common start station
+most common end station
+most common trip from start to end (i.e., most frequent combination of start station and end station)
+
+####3 Trip duration
+total travel time
+average travel time
+
+####4 User info
+counts of each user type
+counts of each gender (only available for NYC and Chicago)
+earliest, most recent, most common year of birth (only available for NYC and Chicago)
+
 ### Credits
 WEBSITES USED ARE:
 UDACITY classroom and suggested websites for more detailed information
@@ -48,4 +70,4 @@ https://www.geeksforgeeks.org/python-pandas-series-dt-hour/#:~:text=dt%20can%20b
 https://www.statology.org/idxmax-pandas/
 https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.nlargest.html
 https://stackoverflow.com/questions/63229237/finding-the-most-frequent-combination-in-dataframe
-I used mostly stackoverflow and geeksforgeeks 
+I used mostly stackoverflow and geeksforgeeks
