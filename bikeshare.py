@@ -198,7 +198,7 @@ def user_stats(df):
     #Alternative code for viewing raw data
         """while True:
             print(df.sample(5))
-           view_more = input("Do you want to see more raw data? Type yes or no")
+           view_more = input("Do you want to see more raw data? Enter yes or no").lower()
             if view_more != "yes":
             break"""
 
