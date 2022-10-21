@@ -1,9 +1,7 @@
-#import libraries to be used
 import time
 import pandas as pd
 import numpy as np
 
-#Create the city data variable, type list
 CITY_DATA = { 'chicago': 'chicago.csv',
               'new york city': 'new_york_city.csv',
               'washington': 'washington.csv' }
@@ -18,20 +16,12 @@ def get_filters():
         (str) day - name of the day of week to filter by, or "all" to apply no day filter
     """
     print('Hello! Let\'s explore some US bikeshare data!')
-<<<<<<< HEAD
-
-    # TO DO: get user input for city (chicago, new york city, washington). HINT: Use a while loop to handle invalid inputs
-||||||| parent of 30963d3 (Created data comment then erased 'HINT' comment)
     
     # TO DO: get user input for city (chicago, new york city, washington). HINT: Use a while loop to handle invalid inputs
-=======
-
-    # TO DO: get user input for city (chicago, new york city, washington).
->>>>>>> 30963d3 (Created data comment then erased 'HINT' comment)
     city = input('Which city do you want to analyze data for?: ').lower()
     while city not in ['chicago', 'new york city', 'washington']:
         city = input ("City not found, please enter either of the following chicago, new york city or washington: ").lower()
-
+     
 
     # TO DO: get user input for month (all, january, february, ... , june)
     month = input('Which month do you want to analyze data for?: ').lower()
@@ -43,7 +33,7 @@ def get_filters():
     day = input('Which day do you want to analyze data for?: ').lower()
     while day not in ['all', 'monday', 'tuesday', 'wednesday', 'thursday', 'friday', 'saturday', 'sunday']:
         day = input ("Day not found, please try again: ").lower()
-
+        
 
 
     print('-'*40)
@@ -62,16 +52,16 @@ def load_data(city, month, day):
         df - Pandas DataFrame containing city data filtered by month and day
     """
     df = pd.read_csv(CITY_DATA[city])
-
+    
     df['Start Time'] = pd.to_datetime(df['Start Time'])
     df['End Time'] = pd.to_datetime(df['End Time'])
-
+    
     df['month'] = df['Start Time'].dt.month
     if month != 'all':
         months = ['january', 'february', 'march', 'april', 'may', 'june']
         month = months.index(month) + 1
         df = df[df['month'] == month]
-
+    
     df['day_of_week'] = df['Start Time'].dt.weekday_name
     if day != 'all':
         df = df[df['day_of_week'] == day.title()]
@@ -197,36 +187,18 @@ def user_stats(df):
         view_data = input('\nWould you like to view 5 rows of individual trip data? Enter yes or no\n').lower()
         if view_data != 'yes':
            print(df.iloc[start_loc:start_loc+5])
-
+        
         start_loc += 5
         while True:
             view_data = input("Would you like to see the next 5 rows?: Enter yes or no ").lower()
             if view_data != 'yes':
                 return
             print(df.iloc[start_loc:start_loc+5])
-<<<<<<< HEAD
-
-#Alternative code for viewing raw data
-    """while True:
-        print(df.sample(5))
-       view_more = input("Do you want to see more raw data? Type yes or no").lower()
-        if view_more != "yes":
-        break"""
-
-
-||||||| parent of 30963d3 (Created data comment then erased 'HINT' comment)
         
     
             
     
     
-=======
-
-
-
-
-
->>>>>>> 30963d3 (Created data comment then erased 'HINT' comment)
 def main():
     while True:
         city, month, day = get_filters()
@@ -244,11 +216,11 @@ def main():
 
 if __name__ == "__main__":
 	main()
-
+    
 #WEBSITES USED ARE:
-#UDACITY classroom and suggested websites for more detailed information
+#UDACITY classroom and suggested websites for more detailed information 
 #https://www.geeksforgeeks.org/python-pandas-series-dt-hour/#:~:text=dt%20can%20be%20used%20to,of%20the%20given%20series%20object.
 #https://www.statology.org/idxmax-pandas/
 #https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.nlargest.html
 #https://stackoverflow.com/questions/63229237/finding-the-most-frequent-combination-in-dataframe
-#I used mostly stackoverflow and geeksforgeeks
+#I used mostly stackoverflow and geeksforgeeks 
